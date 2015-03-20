@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/12/20 17:54:50.000.396,=C:\Users\davidSimoes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/28 14:48:41.000.461,=C:\Users\davidSimoes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/28 14:51:02.000.714,J:\TCC\FACI RPG\Fontes\U_inicial.pas=C:\Users\davidSimoes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/28 14:51:02.000.714,J:\TCC\FACI RPG\Fontes\U_inicial.dfm=C:\Users\davidSimoes\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2015/02/28 14:51:28.000.030,J:\TCC\FACI RPG\faciRpg.dproj=C:\Users\davidSimoes\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2015/02/28 17:16:06.000.617,=J:\TCC\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/02/28 17:17:08.000.704,J:\TCC\FACI RPG\Unit1.pas=J:\TCC\FACI RPG\Fontes\D_module.pas</Transaction>
+    <Transaction>2015/02/28 17:17:08.000.704,J:\TCC\FACI RPG\Unit1.dfm=J:\TCC\FACI RPG\Fontes\D_module.dfm</Transaction>
+    <Transaction>2015/02/28 17:19:23.000.933,J:\TCC\FACI RPG\Fontes\D_module.dfm=J:\TCC\FACI RPG\Fontes\U_Dmodule.dfm</Transaction>
+    <Transaction>2015/02/28 17:19:23.000.933,J:\TCC\FACI RPG\Fontes\D_module.pas=J:\TCC\FACI RPG\Fontes\U_Dmodule.pas</Transaction>
+    <Transaction>2015/03/01 11:12:18.000.388,=J:\TCC\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 11:13:21.000.233,J:\TCC\FACI RPG\Unit1.dfm=J:\TCC\FACI RPG\Fontes\U_splashScreen.dfm</Transaction>
+    <Transaction>2015/03/01 11:13:21.000.233,J:\TCC\FACI RPG\Unit1.pas=J:\TCC\FACI RPG\Fontes\U_splashScreen.pas</Transaction>
+    <Transaction>2015/03/01 15:36:08.000.777,=J:\TCC\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 15:41:14.000.609,J:\TCC\FACI RPG\Fontes\U_SelecaoCampanha.pas=J:\TCC\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 15:41:14.000.609,J:\TCC\FACI RPG\Fontes\U_SelecaoCampanha.dfm=J:\TCC\FACI RPG\Unit1.dfm</Transaction>
+    <Transaction>2015/03/01 17:42:54.000.682,=J:\TCC\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 17:55:08.000.981,=J:\TCC\FACI RPG\Fontes\U_menuFastPlay.pas</Transaction>
+    <Transaction>2015/03/01 18:55:10.000.451,=J:\TCC\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 19:39:39.000.078,J:\TCC\FACI RPG\Unit1.dfm=J:\TCC\FACI RPG\Fontes\U_fichaPersonagem.dfm</Transaction>
+    <Transaction>2015/03/01 19:39:39.000.077,J:\TCC\FACI RPG\Unit1.pas=J:\TCC\FACI RPG\Fontes\U_fichaPersonagem.pas</Transaction>
+    <Transaction>2015/03/15 11:02:35.000.463,=J:\TCC - 02-03-2015\FACI RPG\Unit1.pas</Transaction>
+    <Transaction>2015/03/15 11:04:51.000.789,J:\TCC - 02-03-2015\FACI RPG\Unit1.dfm=J:\TCC - 02-03-2015\FACI RPG\Fontes\U_tabelaPersonagen.dfm</Transaction>
+    <Transaction>2015/03/15 11:04:51.000.789,J:\TCC - 02-03-2015\FACI RPG\Unit1.pas=J:\TCC - 02-03-2015\FACI RPG\Fontes\U_tabelaPersonagen.pas</Transaction>
+    <Transaction>2015/03/15 11:12:17.000.494,J:\TCC - 02-03-2015\FACI RPG\Fontes\U_tabelaPersonagen.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

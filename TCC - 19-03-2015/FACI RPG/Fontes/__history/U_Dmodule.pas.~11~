@@ -1,0 +1,47 @@
+unit U_Dmodule;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL,
+  Data.DB, FireDAC.Comp.Client, FireDAC.VCLUI.Wait, FireDAC.Stan.Param,
+  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet,
+  FireDAC.Comp.UI, Datasnap.Provider, Datasnap.DBClient;
+
+type
+  TD_modulo = class(TDataModule)
+    conexao: TFDConnection;
+    SQL_fichaPersonagem: TFDQuery;
+    DS_fichaPersonagem: TDataSource;
+    tablePersonagem: TFDTable;
+    tablePersonagemidPersonagem: TFDAutoIncField;
+    tablePersonagemnome: TStringField;
+    tablePersonagemforca: TLongWordField;
+    tablePersonagemhabilidade: TLongWordField;
+    tablePersonagemresistencia: TLongWordField;
+    tablePersonagemarmadura: TLongWordField;
+    tablePersonagempoderdefogo: TLongWordField;
+    tablePersonagempontosdevida: TLongWordField;
+    tablePersonagempontosdemagia: TLongWordField;
+    tablePersonagemexperiencia: TLongWordField;
+    tablePersonagempontosJogador: TLongWordField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  D_modulo: TD_modulo;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses U_fichaPersonagem;
+
+{$R *.dfm}
+
+end.

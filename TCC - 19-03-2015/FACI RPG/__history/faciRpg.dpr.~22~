@@ -1,0 +1,45 @@
+program faciRpg;
+
+uses
+  Vcl.Forms,
+  U_inicial in 'Fontes\U_inicial.pas' {F_Inicial},
+  U_Dmodule in 'Fontes\U_Dmodule.pas' {D_modulo: TDataModule},
+  U_splashScreen in 'Fontes\U_splashScreen.pas' {F_splashScreen},
+  U_menuFastPlay in 'Fontes\U_menuFastPlay.pas' {F_menuFastPlay},
+  U_fichaPersonagem in 'Fontes\U_fichaPersonagem.pas' {F_fichaPersonagem};
+
+{$R *.res}
+var
+Inc : integer ;
+
+begin
+  Application.Initialize;
+
+  Application.MainFormOnTaskbar := True;
+  Application.Title := 'F.A.C.I RPG';
+
+  //Criando form de splash.
+  F_splashScreen:= TF_splashScreen.Create(Application);
+  F_SplashScreen.Show;
+  F_splashScreen.Update;
+
+  //Incrementando Posição do ProgessBar
+  for Inc := 0 to 50000 do
+  begin
+  F_splashScreen.pgb_splashScreen.Position := Inc ;
+  end;
+
+  F_splashScreen.pgb_splashScreen.Visible:= false;
+
+
+  //Criar Form principal
+  Application.CreateForm(TF_Inicial, F_Inicial);
+
+  F_splashScreen.Hide;
+  F_splashScreen.pgb_splashScreen.Free;
+  F_Inicial.Show;
+
+
+
+  Application.Run;
+end.
