@@ -26,10 +26,8 @@ object F_Personagem: TF_Personagem
     Align = alClient
     TabOrder = 0
     TabWidth = 200
-    ExplicitHeight = 562
     object tab_consultar: TTabSheet
       Caption = 'Consultar'
-      ExplicitHeight = 528
       object bgPersonagem: TImage
         Left = 0
         Top = 0
@@ -68,11 +66,69 @@ object F_Personagem: TF_Personagem
         Caption = 'Buscar Personagem'
       end
       object btnEditarPersonagemSelecionado: TSpeedButton
-        Left = 450
-        Top = 32
-        Width = 79
-        Height = 26
-        Caption = 'EDITAR'
+        Left = 488
+        Top = 26
+        Width = 185
+        Height = 32
+        Caption = 'Editar Selecionado'
+        Glyph.Data = {
+          F6060000424DF606000000000000360000002800000018000000180000000100
+          180000000000C0060000120B0000120B00000000000000000000FF00FFFF00FF
+          FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+          00FF93655EA46769A46769A46769A46769A46769A46769A46769A46769A46769
+          A46769A46769A46769A46769A46769A46769A46769A46769A46769FF00FFFF00
+          FFFF00FFFF00FFFF00FF93655FEED4B8F4DABBF2D5B1EDCEA7E6C79DE1C093DE
+          BB8CE1BB88E5BC84E7BC81E7BC7EE9BD7FE9BD7FE9BD7FE9BD7FEABF7FE7BC7E
+          9F6F60FF00FFFF00FFFF00FFFF00FFFF00FF93655FEED7C0F4DEC0F0D8B7E9CC
+          ABD9BD99C9AD89C1A57FC6A67ED1AF7FDAB47FE1B77DE3BA7DE7BC7EE9BD7FE9
+          BD7FEABF7FE7BC7E9F6F60FF00FFFF00FFFF00FFFF00FFFF00FF93655FEFDAC5
+          F6E1C6F0D9BCE6CEAF2221233E39358C79609D8767AA8F6BB89A6FC7A474D1AB
+          75DEB579E5BB7DE7BC7EEABF7FE7BC7E9F6F60FF00FFFF00FFFF00FFFF00FFFF
+          00FF936560F0DECCF7E5CEF4DEC5EAD4B63C38351F1F21182A33344344836F56
+          8E77599E835FB29268C7A36FD9B176E3BA7DE7BC7EE7BC7E9F6F60FF00FFFF00
+          FFFF00FFFF00FFFF00FF956660F2E2D3FAEAD7F6E3CEF0DAC2AC9D8A113B4E04
+          689A064F750C3C523A494877644C897253A4865FBC9969D1AB73E1B779E3BA7B
+          9F6F60FF00FFFF00FFFF00FFFF00FFFF00FF986963F2E6DAFAEEDEF7E7D4F4E1
+          CAEBD8BD1A3E4D036A9D0567981B506E2A34404135386A55427E694C987D58B2
+          9163CCA66EDAB1779D6D5FFF00FFFF00FFFF00FFFF00FFFF00FF9E6E64F4EAE1
+          FBF2E6F8EADCF7E6D3F3E0CA748686045983315065956060AA6E6E965D5D643B
+          3A6552407663478E7451A9895DC09C6996695AFF00FFFF00FFFF00FFFF00FFFF
+          00FFA37266F6EEE9FCF6EDF8EFE3F7EADAF7E6D3F0DDC90B41598C5B5BCC8E8E
+          BB7E7EAA6E6E965C5C643B3A64513E6F5D43826C4B9A7E55865D51FF00FFFF00
+          FFFF00FFFF00FFFF00FFA77568F8F3F0FEFBF6FBF3EBF8EEE3F8EBDCF6E6D14E
+          6C769C6969DD9D9DCB8C8CBA7D7DA96D6D9159595A353462503D6A58417B6648
+          735046FF00FFFF00FFFF00FFFF00FFFF00FFAC7969FAF6F4FFFFFEFEF8F3FBF2
+          EAF8EEE3F8EBDAF4E3D07B504FE2A4A4DC9D9DCA8C8CBA7D7DA96D6D8C57575A
+          3534604F3D6C594162443CFF00FFFF00FFFF00FFFF00FFFF00FFB17E6BFAF6F4
+          FFFFFFFFFEFBFEF7F0FBF3EAFAEFE3F8EADAE1CCBB7B504FE2A3A3DC9C9CCA8B
+          8BB87B7BA76C6C8C56565A353566523F583F37FF00FFFF00FFFF00FFFF00FFFF
+          00FFB6816CFAF6F4FFFFFFFFFFFFFFFCFBFEF7F2FBF3EBF8EEE3F8EBDCE1CCBB
+          734847E1A3A3DA9C9CC98B8BB87B7BA76C6C8B56565D3836533C35FF00FFFF00
+          FFFF00FFFF00FFFF00FFBB846EFAF6F4FFFFFFFFFFFFFFFFFFFFFEFBFEF7F2FB
+          F3EAFAEEE3F8EADABBA196734847E1A1A1DA9A9AC98A8AB77A7AA66B6B8B5555
+          5A3535FF00FFFF00FFFF00FFFF00FFFF00FFC0896FFBF7F4FFFFFFFFFFFFFFFF
+          FFFFFFFFFFFEFBFEF7F2FBF2EAFAEEE2F8EBDABBA196734847E0A1A1D99A9AC7
+          8A8AB77A7AA66B6B8A55555B3535FF00FFFF00FFFF00FFFF00FFC58C70FBF7F4
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFBFCF8F2FBF3EAF8EEE2F8EAD9BCA1
+          96916060EBAAAAD99999C78989B67979804E4E414855354756FF00FFFF00FFFF
+          00FFCB9173FBF7F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFBFCF7F0
+          FBF2E9FBF2E5E9D3C484544C916060EAAAAAD89999534E57028AC400AAEA00A6
+          E60087C4FF00FFFF00FFCF9674FBF7F6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFCFAFCF7F0FFFAEFDAC0B69F675BAA7856906060C28989097BAB
+          00BDFF00BDFF00A6E6001C9D000082FF00FFD49875FCF8F6FFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFBFFFEF7DDC4BC9F675BEAB474B7
+          7D46734747009FDE00BDFF008CD1001C9D010D9D010A97000082D49875FCF8F6
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDDC7
+          C29F675BEAB273EFA7517A494A0093D100B1F2012BA70725DC0420B8021DB101
+          0A97D49875FFFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFE2D0CE9F675BEDB572A5686BFF00FFFF00FF0084C10C21BF2D4F
+          F60F2ECC031EB100058FCF8E68CF8E68CF8E68CF8E68CF8E68CF8E68CF8E68CF
+          8E68CF8E68CF8E68CF8E68CF8E68CF8E689F675BA5686BFF00FFFF00FFFF00FF
+          FF00FF1624BF5270FC1839E3010997FF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FF1322BD050DA5FF00FFFF00FF}
+        OnClick = btnEditarPersonagemSelecionadoClick
       end
       object DBG_Personagem: TDBGrid
         Left = 0
@@ -324,15 +380,13 @@ object F_Personagem: TF_Personagem
     object tab_cadastrar: TTabSheet
       Caption = 'Cadastrar / Editar'
       ImageIndex = 1
-      ExplicitLeft = 8
-      ExplicitTop = 34
       object Label3: TLabel
         Left = 16
         Top = 8
         Width = 40
         Height = 19
         Caption = 'nome'
-        FocusControl = DBEdit1
+        FocusControl = txtNomePersonagem
       end
       object Label4: TLabel
         Left = 16
@@ -340,7 +394,7 @@ object F_Personagem: TF_Personagem
         Width = 35
         Height = 19
         Caption = 'forca'
-        FocusControl = DBEdit2
+        FocusControl = txtForcaPersonagem
       end
       object Label5: TLabel
         Left = 16
@@ -348,7 +402,7 @@ object F_Personagem: TF_Personagem
         Width = 72
         Height = 19
         Caption = 'habilidade'
-        FocusControl = DBEdit3
+        FocusControl = txtHabilidadePersonagem
       end
       object Label6: TLabel
         Left = 16
@@ -356,7 +410,7 @@ object F_Personagem: TF_Personagem
         Width = 73
         Height = 19
         Caption = 'resistencia'
-        FocusControl = DBEdit4
+        FocusControl = txtResistenciaPersonagem
       end
       object Label7: TLabel
         Left = 16
@@ -364,7 +418,7 @@ object F_Personagem: TF_Personagem
         Width = 68
         Height = 19
         Caption = 'armadura'
-        FocusControl = DBEdit5
+        FocusControl = txtArmaduraPersonagem
       end
       object Label8: TLabel
         Left = 16
@@ -372,7 +426,7 @@ object F_Personagem: TF_Personagem
         Width = 100
         Height = 19
         Caption = 'poder de fogo'
-        FocusControl = DBEdit6
+        FocusControl = txtPoderFogoPersonagem
       end
       object Label9: TLabel
         Left = 16
@@ -380,7 +434,7 @@ object F_Personagem: TF_Personagem
         Width = 104
         Height = 19
         Caption = 'pontos de vida'
-        FocusControl = DBEdit7
+        FocusControl = txtVidaPersonagem
       end
       object Label10: TLabel
         Left = 16
@@ -388,7 +442,7 @@ object F_Personagem: TF_Personagem
         Width = 118
         Height = 19
         Caption = 'pontos de magia'
-        FocusControl = DBEdit8
+        FocusControl = txtPontosMagiaPersonagem
       end
       object Label11: TLabel
         Left = 16
@@ -396,7 +450,7 @@ object F_Personagem: TF_Personagem
         Width = 79
         Height = 19
         Caption = 'experiencia'
-        FocusControl = DBEdit9
+        FocusControl = txtExpPersonagem
       end
       object Label12: TLabel
         Left = 16
@@ -404,7 +458,7 @@ object F_Personagem: TF_Personagem
         Width = 105
         Height = 19
         Caption = 'pontosJogador'
-        FocusControl = DBEdit10
+        FocusControl = txtPontosJogador
       end
       object img_fotoPersonagem: TImage
         Left = 496
@@ -920,7 +974,7 @@ object F_Personagem: TF_Personagem
           588B58588B58588B5858FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
           00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
       end
-      object DBEdit1: TDBEdit
+      object txtNomePersonagem: TDBEdit
         Left = 16
         Top = 32
         Width = 457
@@ -930,7 +984,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 0
       end
-      object DBEdit2: TDBEdit
+      object txtForcaPersonagem: TDBEdit
         Left = 16
         Top = 88
         Width = 50
@@ -940,7 +994,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 1
       end
-      object DBEdit3: TDBEdit
+      object txtHabilidadePersonagem: TDBEdit
         Left = 16
         Top = 144
         Width = 50
@@ -950,7 +1004,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 2
       end
-      object DBEdit4: TDBEdit
+      object txtResistenciaPersonagem: TDBEdit
         Left = 16
         Top = 199
         Width = 50
@@ -960,7 +1014,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 3
       end
-      object DBEdit5: TDBEdit
+      object txtArmaduraPersonagem: TDBEdit
         Left = 16
         Top = 256
         Width = 50
@@ -970,7 +1024,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 4
       end
-      object DBEdit6: TDBEdit
+      object txtPoderFogoPersonagem: TDBEdit
         Left = 16
         Top = 312
         Width = 50
@@ -980,7 +1034,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 5
       end
-      object DBEdit7: TDBEdit
+      object txtVidaPersonagem: TDBEdit
         Left = 16
         Top = 368
         Width = 50
@@ -990,7 +1044,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 6
       end
-      object DBEdit8: TDBEdit
+      object txtPontosMagiaPersonagem: TDBEdit
         Left = 16
         Top = 424
         Width = 50
@@ -1000,7 +1054,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 7
       end
-      object DBEdit9: TDBEdit
+      object txtExpPersonagem: TDBEdit
         Left = 16
         Top = 480
         Width = 50
@@ -1010,7 +1064,7 @@ object F_Personagem: TF_Personagem
         DataSource = DS_CadastrarPersonagem
         TabOrder = 8
       end
-      object DBEdit10: TDBEdit
+      object txtPontosJogador: TDBEdit
         Left = 16
         Top = 536
         Width = 50
@@ -1026,13 +1080,11 @@ object F_Personagem: TF_Personagem
         Width = 1758
         Height = 19
         Panels = <>
-        ExplicitTop = 562
-        ExplicitWidth = 1766
       end
     end
   end
   object DS_CadastrarPersonagem: TDataSource
-    DataSet = D_modulo.TB_Personagem
+    DataSet = D_modulo.SQL_Personagem
     Left = 504
     Top = 320
   end

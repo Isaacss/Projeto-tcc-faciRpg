@@ -23,7 +23,7 @@ type
     Label1: TLabel;
     RG_buscaPersonagem: TRadioGroup;
     Label2: TLabel;
-    dsDS_CadastrarPersonagem: TDataSource;
+    DS_CadastrarPersonagem: TDataSource;
     Label3: TLabel;
     txtNomePersonagem: TDBEdit;
     Label4: TLabel;
@@ -57,6 +57,7 @@ type
     btnOkPersonagem: TSpeedButton;
     btnCancelarPersonagem: TSpeedButton;
     btnDeletePersonagem: TSpeedButton;
+    btnEditarPersonagemSelecionado: TSpeedButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure txtBuscaPersonagemChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -79,7 +80,7 @@ uses U_Dmodule, U_inicial, U_menuFastPlay;
 procedure TF_Personagem.btnEditarPersonagemSelecionadoClick(Sender: TObject);
 begin
   // Selecionar Produto Para Editar
-  D_modulo.TB_Personagem.Locate('nome',D_modulo.TB_Personagemnome.Value,[]);
+
 
 
   end;

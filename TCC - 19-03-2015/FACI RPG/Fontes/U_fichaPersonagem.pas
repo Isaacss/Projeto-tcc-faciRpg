@@ -75,16 +75,16 @@ implementation
 
 {$R *.dfm}
 
-uses U_Dmodule, U_inicial, U_menuFastPlay;
+uses U_inicial, U_menuFastPlay, U_Dmodule;
 
 procedure TF_Personagem.btnEditarPersonagemSelecionadoClick(Sender: TObject);
 begin
-  // Selecionar Produto Para Editar
+  // Selecionar Personagem Para Editar
+  D_modulo.TB_Personagem.Locate('idPersonagem',
+    D_modulo.SQL_PersonagemidPersonagem.Value, []);
+    Page_Personagem.ActivePage:= tab_cadastrar;
 
-
-
-  end;
-
+end;
 
 procedure TF_Personagem.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
@@ -95,12 +95,10 @@ end;
 
 procedure TF_Personagem.FormCreate(Sender: TObject);
 begin
-//ativa a tb produtos
+  // ativa a tb produtos
   D_modulo.TB_Personagem.Active := true;
-  //seto oara iniciar na tela de consulta.
+  // seto para iniciar na tela de consulta.
   Page_Personagem.ActivePage := tab_consultar;
-
-
 
 end;
 

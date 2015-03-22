@@ -36,62 +36,6 @@ object D_modulo: TD_modulo
       'select * from fichaPersonagem')
     Left = 40
     Top = 192
-    object SQL_PersonagemidPersonagem: TFDAutoIncField
-      FieldName = 'idPersonagem'
-      Origin = 'idPersonagem'
-      ProviderFlags = [pfInWhere, pfInKey]
-    end
-    object SQL_Personagemnome: TStringField
-      FieldName = 'nome'
-      Origin = 'nome'
-      Required = True
-      Size = 100
-    end
-    object SQL_Personagemforca: TLongWordField
-      FieldName = 'forca'
-      Origin = 'forca'
-      Required = True
-    end
-    object SQL_Personagemhabilidade: TLongWordField
-      FieldName = 'habilidade'
-      Origin = 'habilidade'
-      Required = True
-    end
-    object SQL_Personagemresistencia: TLongWordField
-      FieldName = 'resistencia'
-      Origin = 'resistencia'
-      Required = True
-    end
-    object SQL_Personagemarmadura: TLongWordField
-      FieldName = 'armadura'
-      Origin = 'armadura'
-      Required = True
-    end
-    object SQL_Personagempoderdefogo: TLongWordField
-      FieldName = 'poder de fogo'
-      Origin = '`poder de fogo`'
-      Required = True
-    end
-    object SQL_Personagempontosdevida: TLongWordField
-      FieldName = 'pontos de vida'
-      Origin = '`pontos de vida`'
-      Required = True
-    end
-    object SQL_Personagempontosdemagia: TLongWordField
-      FieldName = 'pontos de magia'
-      Origin = '`pontos de magia`'
-      Required = True
-    end
-    object SQL_Personagemexperiencia: TLongWordField
-      FieldName = 'experiencia'
-      Origin = 'experiencia'
-      Required = True
-    end
-    object SQL_PersonagempontosJogador: TLongWordField
-      FieldName = 'pontosJogador'
-      Origin = 'pontosJogador'
-      Required = True
-    end
   end
   object DS_Personagem: TDataSource
     DataSet = SQL_Personagem

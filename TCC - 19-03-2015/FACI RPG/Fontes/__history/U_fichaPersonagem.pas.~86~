@@ -25,27 +25,27 @@ type
     Label2: TLabel;
     DS_CadastrarPersonagem: TDataSource;
     Label3: TLabel;
-    DBEdit1: TDBEdit;
+    txtNomePersonagem: TDBEdit;
     Label4: TLabel;
-    DBEdit2: TDBEdit;
+    txtForcaPersonagem: TDBEdit;
     Label5: TLabel;
-    DBEdit3: TDBEdit;
+    txtHabilidadePersonagem: TDBEdit;
     Label6: TLabel;
-    DBEdit4: TDBEdit;
+    txtResistenciaPersonagem: TDBEdit;
     Label7: TLabel;
-    DBEdit5: TDBEdit;
+    txtArmaduraPersonagem: TDBEdit;
     Label8: TLabel;
-    DBEdit6: TDBEdit;
+    txtPoderFogoPersonagem: TDBEdit;
     Label9: TLabel;
-    DBEdit7: TDBEdit;
+    txtVidaPersonagem: TDBEdit;
     Label10: TLabel;
-    DBEdit8: TDBEdit;
+    txtPontosMagiaPersonagem: TDBEdit;
     Label11: TLabel;
-    DBEdit9: TDBEdit;
+    txtExpPersonagem: TDBEdit;
     Label12: TLabel;
-    DBEdit10: TDBEdit;
+    txtPontosJogador: TDBEdit;
     img_fotoPersonagem: TImage;
-    SpeedButton1: TSpeedButton;
+    btnCalcularPontosPersonagem: TSpeedButton;
     ACM_CadastroPersonagem: TActionManager;
     ac_insert: TDataSetInsert;
     ac_delete: TDataSetDelete;
@@ -57,8 +57,11 @@ type
     btnOkPersonagem: TSpeedButton;
     btnCancelarPersonagem: TSpeedButton;
     btnDeletePersonagem: TSpeedButton;
+    btnEditarPersonagemSelecionado: TSpeedButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure txtBuscaPersonagemChange(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnEditarPersonagemSelecionadoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,12 +75,29 @@ implementation
 
 {$R *.dfm}
 
-uses U_Dmodule, U_inicial, U_menuFastPlay;
+uses U_inicial, U_menuFastPlay, U_Dmodule;
+
+procedure TF_Personagem.btnEditarPersonagemSelecionadoClick(Sender: TObject);
+begin
+  // Selecionar Personagem Para Editar
+  D_modulo.TB_Personagem.Locate('idPersonagem',
+    D_modulo.SQL_PersonagemidPersonagem.Value, []);
+
+end;
 
 procedure TF_Personagem.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   D_modulo.SQL_Personagem.Close;
   F_Personagem := nil;
+
+end;
+
+procedure TF_Personagem.FormCreate(Sender: TObject);
+begin
+  // ativa a tb produtos
+  D_modulo.TB_Personagem.Active := true;
+  // seto para iniciar na tela de consulta.
+  Page_Personagem.ActivePage := tab_consultar;
 
 end;
 
@@ -87,6 +107,7 @@ begin
   begin
     showMessage('Escolha o tipo de Busca!');
     Exit;
+
   end;
 
   with D_modulo.SQL_Personagem do

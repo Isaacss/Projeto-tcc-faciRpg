@@ -75,13 +75,12 @@ implementation
 
 {$R *.dfm}
 
-uses U_Dmodule, U_inicial, U_menuFastPlay;
+uses U_inicial, U_menuFastPlay, U_Dmodule;
 
 procedure TF_Personagem.btnEditarPersonagemSelecionadoClick(Sender: TObject);
 begin
-  // Selecionar Produto Para Editar
-  D_modulo.TB_Personagem.Locate('idPersonagem',
-    D_modulo.TB_Personagemnome.Value);
+  // Selecionar Personagem Para Editar
+
 
 end;
 
@@ -94,7 +93,10 @@ end;
 
 procedure TF_Personagem.FormCreate(Sender: TObject);
 begin
+  // ativa a tb produtos
   D_modulo.TB_Personagem.Active := true;
+  // seto para iniciar na tela de consulta.
+  Page_Personagem.ActivePage := tab_consultar;
 
 end;
 
@@ -104,6 +106,7 @@ begin
   begin
     showMessage('Escolha o tipo de Busca!');
     Exit;
+
   end;
 
   with D_modulo.SQL_Personagem do
@@ -121,7 +124,7 @@ begin
 
     end;
 
-    ParamByName('busca').Value := txtBuscaPersonagem.text + '%';
+    ParamByName('busca').value := txtBuscaPersonagem.text + '%';
     Open;
 
     if RecordCount = 0 then

@@ -29,6 +29,17 @@ type
     TB_Personagempontosdemagia: TLongWordField;
     TB_Personagemexperiencia: TLongWordField;
     TB_PersonagempontosJogador: TLongWordField;
+    SQL_PersonagemidPersonagem: TFDAutoIncField;
+    SQL_Personagemnome: TStringField;
+    SQL_Personagemforca: TLongWordField;
+    SQL_Personagemhabilidade: TLongWordField;
+    SQL_Personagemresistencia: TLongWordField;
+    SQL_Personagemarmadura: TLongWordField;
+    SQL_Personagempoderdefogo: TLongWordField;
+    SQL_Personagempontosdevida: TLongWordField;
+    SQL_Personagempontosdemagia: TLongWordField;
+    SQL_Personagemexperiencia: TLongWordField;
+    SQL_PersonagempontosJogador: TLongWordField;
   private
     { Private declarations }
   public

@@ -79,10 +79,9 @@ uses U_Dmodule, U_inicial, U_menuFastPlay;
 
 procedure TF_Personagem.btnEditarPersonagemSelecionadoClick(Sender: TObject);
 begin
-//Selecionar Produto Para Editar
-  D_modulo.TB_Personagem.Locate('')
-
-
+  // Selecionar Personagem Para Editar
+  // D_modulo.TB_Personagem.Locate('idPersonagem',D_modulo.sqlIdPersonagem.value,[]);
+                                                          D_modulo.sql
 end;
 
 procedure TF_Personagem.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -90,12 +89,14 @@ begin
   D_modulo.SQL_Personagem.Close;
   F_Personagem := nil;
 
-
 end;
 
 procedure TF_Personagem.FormCreate(Sender: TObject);
 begin
+  // ativa a tb produtos
   D_modulo.TB_Personagem.Active := true;
+  // seto para iniciar na tela de consulta.
+  Page_Personagem.ActivePage := tab_consultar;
 
 end;
 
@@ -105,6 +106,7 @@ begin
   begin
     showMessage('Escolha o tipo de Busca!');
     Exit;
+
   end;
 
   with D_modulo.SQL_Personagem do

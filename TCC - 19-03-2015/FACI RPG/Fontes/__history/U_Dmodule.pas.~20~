@@ -14,21 +14,21 @@ type
   TD_modulo = class(TDataModule)
     conexao: TFDConnection;
     mysql_link: TFDPhysMySQLDriverLink;
-    SQL_fichaPersonagem: TFDQuery;
-    DS_fichaPersonagem: TDataSource;
     waitCursor: TFDGUIxWaitCursor;
-    FDTable1: TFDTable;
-    FDTable1idPersonagem: TFDAutoIncField;
-    FDTable1nome: TStringField;
-    FDTable1forca: TLongWordField;
-    FDTable1habilidade: TLongWordField;
-    FDTable1resistencia: TLongWordField;
-    FDTable1armadura: TLongWordField;
-    FDTable1poderdefogo: TLongWordField;
-    FDTable1pontosdevida: TLongWordField;
-    FDTable1pontosdemagia: TLongWordField;
-    FDTable1experiencia: TLongWordField;
-    FDTable1pontosJogador: TLongWordField;
+    SQL_Personagem: TFDQuery;
+    DS_Personagem: TDataSource;
+    TB_Personagem: TFDTable;
+    TB_PersonagemidPersonagem: TFDAutoIncField;
+    TB_Personagemnome: TStringField;
+    TB_Personagemforca: TLongWordField;
+    TB_Personagemhabilidade: TLongWordField;
+    TB_Personagemresistencia: TLongWordField;
+    TB_Personagemarmadura: TLongWordField;
+    TB_Personagempoderdefogo: TLongWordField;
+    TB_Personagempontosdevida: TLongWordField;
+    TB_Personagempontosdemagia: TLongWordField;
+    TB_Personagemexperiencia: TLongWordField;
+    TB_PersonagempontosJogador: TLongWordField;
   private
     { Private declarations }
   public
@@ -41,6 +41,8 @@ var
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses U_fichaPersonagem;
 
 {$R *.dfm}
 
