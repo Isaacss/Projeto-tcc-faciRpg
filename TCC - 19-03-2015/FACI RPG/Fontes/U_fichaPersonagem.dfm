@@ -380,6 +380,10 @@ object F_Personagem: TF_Personagem
     object tab_cadastrar: TTabSheet
       Caption = 'Cadastrar / Editar'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label3: TLabel
         Left = 16
         Top = 8
