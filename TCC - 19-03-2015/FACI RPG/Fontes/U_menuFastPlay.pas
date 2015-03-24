@@ -10,9 +10,7 @@ uses
 
 type
   TF_menuFastPlay = class(TForm)
-    sbtnNovaCampanha: TSpeedButton;
     sbtnCriarPerson: TSpeedButton;
-    sbtnCriarNpc: TSpeedButton;
     pnlSelecao: TPanel;
     imgLogoSelecao: TImage;
     Label1: TLabel;

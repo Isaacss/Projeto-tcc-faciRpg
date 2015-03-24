@@ -6,7 +6,9 @@ uses
   U_Dmodule in 'Fontes\U_Dmodule.pas' {D_modulo: TDataModule},
   U_splashScreen in 'Fontes\U_splashScreen.pas' {F_splashScreen},
   U_menuFastPlay in 'Fontes\U_menuFastPlay.pas' {F_menuFastPlay},
-  U_fichaPersonagem in 'Fontes\U_fichaPersonagem.pas' {F_Personagem};
+  U_fichaPersonagem in 'Fontes\U_fichaPersonagem.pas' {F_Personagem},
+  U_mestre in 'Fontes\U_mestre.pas' {F_Mestre},
+  U_menuMestre in 'Fontes\U_menuMestre.pas' {F_menuMestre};
 
 {$R *.res}
 
@@ -35,6 +37,8 @@ begin
   // Criar Form principal
   Application.CreateForm(TF_Inicial, F_Inicial);
   Application.CreateForm(TD_modulo, D_modulo);
+  Application.CreateForm(TF_Mestre, F_Mestre);
+  Application.CreateForm(TF_menuMestre, F_menuMestre);
   // Application.CreateForm(TF_splashScreen, F_splashScreen);
   F_splashScreen.Hide;
   F_splashScreen.pgb_splashScreen.Free;

@@ -79,7 +79,6 @@ uses U_inicial, U_menuFastPlay, U_Dmodule;
 
 procedure TF_Personagem.btnEditarPersonagemSelecionadoClick(Sender: TObject);
 begin
-//Teste
   // Selecionar Personagem Para Editar
   D_modulo.TB_Personagem.Locate('idPersonagem',
     D_modulo.SQL_PersonagemidPersonagem.Value, []);
