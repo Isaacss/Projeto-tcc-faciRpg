@@ -22,7 +22,7 @@ object F_Personagem: TF_Personagem
     Top = 0
     Width = 1766
     Height = 651
-    ActivePage = tab_consultar
+    ActivePage = tab_cadastrar
     Align = alClient
     TabOrder = 0
     TabWidth = 200
@@ -1036,12 +1036,13 @@ object F_Personagem: TF_Personagem
       end
       object txtVidaPersonagem: TDBEdit
         Left = 16
-        Top = 368
+        Top = 367
         Width = 50
         Height = 27
         CharCase = ecUpperCase
         DataField = 'pontos de vida'
         DataSource = DS_CadastrarPersonagem
+        Enabled = False
         TabOrder = 6
       end
       object txtPontosMagiaPersonagem: TDBEdit
@@ -1052,6 +1053,7 @@ object F_Personagem: TF_Personagem
         CharCase = ecUpperCase
         DataField = 'pontos de magia'
         DataSource = DS_CadastrarPersonagem
+        Enabled = False
         TabOrder = 7
       end
       object txtExpPersonagem: TDBEdit
@@ -1062,6 +1064,7 @@ object F_Personagem: TF_Personagem
         CharCase = ecUpperCase
         DataField = 'experiencia'
         DataSource = DS_CadastrarPersonagem
+        Enabled = False
         TabOrder = 8
       end
       object txtPontosJogador: TDBEdit
@@ -1072,6 +1075,7 @@ object F_Personagem: TF_Personagem
         CharCase = ecUpperCase
         DataField = 'pontosJogador'
         DataSource = DS_CadastrarPersonagem
+        Enabled = False
         TabOrder = 9
       end
       object STB_Personagem: TStatusBar
@@ -1126,6 +1130,9 @@ object F_Personagem: TF_Personagem
       Hint = 'Cancel'
       ImageIndex = 8
       DataSource = DS_CadastrarPersonagem
+    end
+    object Action1: TAction
+      Caption = 'Action1'
     end
   end
 end

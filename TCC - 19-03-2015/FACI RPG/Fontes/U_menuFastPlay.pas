@@ -14,9 +14,10 @@ type
     pnlSelecao: TPanel;
     imgLogoSelecao: TImage;
     Label1: TLabel;
-    sbtnCarregarCampanha: TSpeedButton;
+    sbtnMestre: TSpeedButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure sbtnCriarPersonClick(Sender: TObject);
+    procedure sbtnMestreClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +31,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_Dmodule, U_inicial, U_fichaPersonagem;
+uses U_Dmodule, U_inicial, U_fichaPersonagem,U_mestre;
 
 procedure TF_menuFastPlay.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
@@ -47,5 +48,15 @@ begin
     F_menuFastPlay.close;
   end;
 end;
+
+procedure TF_menuFastPlay.sbtnMestreClick(Sender: TObject);
+begin
+    F_Mestre:=TF_Mestre.Create(self);
+    F_Mestre.ShowModal;
+    F_menuFastplay.Hide;
+    F_menuFastplay.Close;
+
+
+    end;
 
 end.

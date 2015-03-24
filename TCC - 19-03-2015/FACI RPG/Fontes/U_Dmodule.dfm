@@ -16,8 +16,8 @@ object D_modulo: TD_modulo
   object mysql_link: TFDPhysMySQLDriverLink
     DriverID = 'MySQL'
     VendorLib = 
-      'C:\Users\davidSimoes\Documents\GitHub\Projeto-tcc-faciRpg\TCC - ' +
-      '19-03-2015\FACI RPG\libmySQL.dll'
+      'C:\Users\Isaac\Documents\GitHub\Projeto-tcc-faciRpg\TCC - 19-03-' +
+      '2015\FACI RPG\libmySQL.dll'
     Left = 120
     Top = 16
   end
@@ -40,6 +40,7 @@ object D_modulo: TD_modulo
       FieldName = 'idPersonagem'
       Origin = 'idPersonagem'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object SQL_Personagemnome: TStringField
       FieldName = 'nome'
@@ -99,7 +100,6 @@ object D_modulo: TD_modulo
     Top = 192
   end
   object TB_Personagem: TFDTable
-    Active = True
     IndexFieldNames = 
       'idPersonagem;armadura;experiencia;forca;habilidade;nome;poder de' +
       ' fogo;pontos de magia;pontos de vida;pontosJogador;resistencia'

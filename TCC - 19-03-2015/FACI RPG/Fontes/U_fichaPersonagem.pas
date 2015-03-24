@@ -58,6 +58,7 @@ type
     btnCancelarPersonagem: TSpeedButton;
     btnDeletePersonagem: TSpeedButton;
     btnEditarPersonagemSelecionado: TSpeedButton;
+    Action1: TAction;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure txtBuscaPersonagemChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);

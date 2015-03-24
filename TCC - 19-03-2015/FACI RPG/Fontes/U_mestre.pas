@@ -8,8 +8,8 @@ uses
 
 type
   TF_Mestre = class(TForm)
-    SpeedButton1: TSpeedButton;
-    SpeedButton2: TSpeedButton;
+    sbtnJogoSalvo: TSpeedButton;
+    sbtnNovoJogo: TSpeedButton;
   private
     { Private declarations }
   public
@@ -22,5 +22,7 @@ var
 implementation
 
 {$R *.dfm}
+
+uses U_menuMestre;
 
 end.

@@ -8,13 +8,13 @@ uses
 
 type
   TF_menuMestre = class(TForm)
-    SpeedButton1: TSpeedButton;
-    SpeedButton2: TSpeedButton;
-    SpeedButton3: TSpeedButton;
-    SpeedButton4: TSpeedButton;
-    SpeedButton5: TSpeedButton;
-    SpeedButton6: TSpeedButton;
-    SpeedButton7: TSpeedButton;
+    sbtnFichaPerson: TSpeedButton;
+    sbtnTestes: TSpeedButton;
+    sbtnMapas: TSpeedButton;
+    sbtnAventuras: TSpeedButton;
+    sbtnNPCS: TSpeedButton;
+    sbtnLojas: TSpeedButton;
+    sbtnCombate: TSpeedButton;
   private
     { Private declarations }
   public
